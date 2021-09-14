@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/Mohammad.Atia/IdeaProjects/TestNG_Training">
+
+        <classes>
+            <class name="Annotations_TC1">
+                <methods>
+                    <include name="step1"/>
+                    <include name="step2"/>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+    <test name="22">
+        <classes>
+            <class name="Annotations_TC2">
+                <methods>
+                    <include name="step3"/>
+                    <include name="step4"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>
