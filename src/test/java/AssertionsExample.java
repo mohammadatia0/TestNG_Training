@@ -24,6 +24,12 @@ public class AssertionsExample {
     {
         WebElement logo = driver.findElement(By.id("divLogo"));
         Assert.assertTrue(logo.isDisplayed(),"Error: Logo not display");//This return true if the method return true and print error if not display or if isDisplay method return false
+        /*
+        Assert.assertTrue(in);
+        // This return True if the output of "in" is true
+        Assert.assertFalse(in);
+        // This return True if the output of "in" is false
+        */
     }
 
     @Test(priority = 2)
