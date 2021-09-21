@@ -82,6 +82,18 @@ see( DependencyTests )class for more info
 
 6-
 Grouping Tests:
+if we want to separate some tests for smoke or functional and we want to run those tests as a group.
+for more ifo visit GroupingExample class
+
+7-
+        Assert.assertEquals();
+        Assert.assertTrue();
+        Assert.assertFalse();
+
+        --> All info in AsertionExample class   <---
+
+
+
 
 
 
