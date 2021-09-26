@@ -3,12 +3,6 @@
 <suite name="All Test Suite">
     <test name="Grouping">
 
-        <groups>
-            <run>
-                <include name="regression"></include>
-            </run>
-        </groups>
-
         <classes>
 
             <class name="GroupingExample">

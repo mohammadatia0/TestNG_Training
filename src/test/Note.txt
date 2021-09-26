@@ -92,6 +92,34 @@ for more ifo visit GroupingExample class
 
         --> All info in AsertionExample class   <---
 
+8-
+    Parameters in TestNG
+    If we want to pass parameter on the Testng for the test:
+
+9-
+    DataProvider in TestNG
+    this is the second type of parameters in TestNG
+    this mean that the same test can be run with different set of data.
+    * in this case we must create another method called dataprovider that supply the (methos with parameters) with data -> @DataProvider
+    * dataprovider method return 2D array of object
+    * we invoke the dataprovider method by its name
+    * can be implemented in the same class or in different class
+    for more info go to DataProviderExample, CustomDataProviderExample
+
+
+10-
+
+Parallel Testing
+you can run every thing in parallel Tests,Methods,Classes, Suites,...
+like what i did in parallel.xml
+
+
+
+
+
+
+
+
 
 
 
