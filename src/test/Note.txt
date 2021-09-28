@@ -113,8 +113,32 @@ Parallel Testing
 you can run every thing in parallel Tests,Methods,Classes, Suites,...
 like what i did in parallel.xml
 
+11-
+Listeners:
+if we want to do some actions depnds on the results of TCs, we must use listeners.
+Listeners are methods/interfaces triggered based on the report results.
+So if test start then do an action if test fail then do another action also if pass or skip
+There are different types of listeners: (https://testng.org/doc/documentation-main.html#testng-listeners)
+    IAnnotationTransformer
+    IAnnotationTransformer2
+    IHookable
+    IInvokedMethodListener
+    IMethodInterceptor
+    IReporter
+    ISuiteListener
+    ITestListener
+The most popular one is "ITestListener", and this listener contains some methods:
+    onFinish(ITestContext context): Invoked after all the tests have run and all their Configuration methods have been called.
+    onStart(ITestContext context): Invoked after the test class is instantiated and before any configuration method is called.
+    onTestFailedButWithinSuccessPercentage(ITestResult result): Invoked each time a method fails but has been annotated with successPercentage and this failure still keeps it within the success percentage requested.
+    onTestFailure(ITestResult result): Invoked each time a test fails.
+    onTestSkipped(ITestResult result): Invoked each time a test is skipped.
+    onTestStart(ITestResult result): Invoked each time before a test will be invoked.
+    onTestSuccess(ITestResult result): Invoked each time a test succeeds.
 
+ And because the listener is interface, so we need to implement all methods when we use the listeners.
 
+Listeners package have more info...
 
 
 
